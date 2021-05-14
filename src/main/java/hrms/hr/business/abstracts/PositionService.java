@@ -6,5 +6,4 @@ import hrms.hr.entities.concretes.Position;
 
 public interface PositionService {
 	List<Position> getAll();
-
 }

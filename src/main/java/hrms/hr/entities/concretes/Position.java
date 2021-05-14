@@ -13,36 +13,36 @@ public class Position {
 	@Id	
 	@GeneratedValue
 	@Column(name="Id")
-	private Integer Id;
+	private int Id;
 	
 	@Column(name="PersonnelId")
-	private Integer PersonnelId;
+	private int PersonnelId;
 	
 	@Column(name="Name")
 	private String Name;
 	
 	public Position() {}
-	
-	public Position(Integer id, Integer personnelId, String name) {
+
+	public Position(int id, int personnelId, String name) {
 		super();
 		Id = id;
 		PersonnelId = personnelId;
 		Name = name;
 	}
 
-	public Integer getId() {
+	public int getId() {
 		return Id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(int id) {
 		Id = id;
 	}
 
-	public Integer getPersonnelId() {
+	public int getPersonnelId() {
 		return PersonnelId;
 	}
 
-	public void setPersonnelId(Integer personnelId) {
+	public void setPersonnelId(int personnelId) {
 		PersonnelId = personnelId;
 	}
 

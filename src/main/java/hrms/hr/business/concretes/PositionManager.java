@@ -22,8 +22,7 @@ public class PositionManager implements PositionService {
 
 	@Override
 	public List<Position> getAll() {
-		return this.positionDao.findAll();
-		
+		return this.positionDao.findAll();	
 	}
 
 }
