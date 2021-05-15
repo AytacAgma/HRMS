@@ -6,51 +6,25 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
-@Table(name="Positions")
+@Table(name="positions")
 public class Position {
 	
 	@Id	
 	@GeneratedValue
-	@Column(name="Id")
+	@Column(name="id")
 	private int Id;
 	
-	@Column(name="PersonnelId")
+	@Column(name="personnel_id")
 	private int PersonnelId;
 	
-	@Column(name="Name")
+	@Column(name="name")
 	private String Name;
-	
-	public Position() {}
-
-	public Position(int id, int personnelId, String name) {
-		super();
-		Id = id;
-		PersonnelId = personnelId;
-		Name = name;
-	}
-
-	public int getId() {
-		return Id;
-	}
-
-	public void setId(int id) {
-		Id = id;
-	}
-
-	public int getPersonnelId() {
-		return PersonnelId;
-	}
-
-	public void setPersonnelId(int personnelId) {
-		PersonnelId = personnelId;
-	}
-
-	public String getName() {
-		return Name;
-	}
-
-	public void setName(String name) {
-		Name = name;
-	}
 }
